@@ -1,4 +1,4 @@
-Room Name,Capacity,Fee (per hour)
-Alpha,3-4,30
-Bravo,5-8,50
-Charlie,8-10,60
+Room Name,Capacity,Fee (per hour),Fee (per day)
+Alpha,4,25,100
+Bravo,6,35,120
+Charlie,12,50,250
