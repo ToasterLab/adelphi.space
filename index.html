@@ -8,6 +8,17 @@
 			<style>
 				#details{margin:25px auto 25px auto}
 				span.block p{margin-bottom:0;margin-top:0;}
+				.thin{font-weight:300}
+				#about{height:300px;background: url("assets/img/meeting_room_1.jpg");background-position:center center;}
+				#about>div.row{
+					position: relative;
+					top: 50%;
+					-webkit-transform: translateY(-50%);
+					-ms-transform: translateY(-50%);
+					transform: translateY(-50%);
+				}
+				.modal{text-align:center;}
+				img.responsive-img{max-width:80%};
 			</style>
 		</head>
 
@@ -16,7 +27,7 @@
 				<nav class="grey darken-4">
 					<div class="container">
 						<div class="nav-wrapper">
-							<a href="#" class="brand-logo">adelphi.space</a>
+							<a href="#" class="brand-logo">adelphi.<span class="thin">space</span></a>
 							<ul id="nav-mobile" class="right hide-on-med-and-down">
 								<li><a href="#about">About</a></li>
 								<li><a href="#details">Details</a></li>
@@ -26,26 +37,49 @@
 					</div>
 				</nav>
 			</div>
-			<div class="parallax-container">
-				<div class="parallax">
-					<img src="assets/img/meeting_room_1.jpg">
-				</div>
-			</div>
-			<div class="section white" id="about">
+			<div class="section" id="about">
 				<div class="row container">
-					<h2 class="header">Meeting Rooms</h2>
-						<p class="grey-text text-darken-3 lighten-3">Ideal for mediations, arbitration and adjudication conferences, and client meetings. Your privacy is assured.</p>
+					<h2 class="header thin white-text">Need temporary meeting rooms?</h2>
+					<p class="white-text">Ideal for mediations, arbitration and adjudication conferences, workshops and meetings. <a href="mailto:mailto:book@adelphi.space">Host your next meeting with us.</a></p>
 				</div>
 			</div>
-			<div class="parallax-container">
-				<div class="parallax"><img src="assets/img/meeting_room_2.jpg"></div>
+			<div class="container" id="details">
+				<table class="highlight">
+					<thead>
+						<tr>
+							<th>Room Name</th>
+							<th>Capacity</th>
+							<th>Fee (per hour)</th>
+							<th>Fee (per day)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a class="modal-trigger" href="#alpha">Alpha</a></td>
+							<td>4</td>
+							<td>35</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td><a class="modal-trigger" href="#bravo">Bravo</a></td>
+							<td>6</td>
+							<td>40</td>
+							<td>150</td>
+						</tr>
+						<tr>
+							<td><a class="modal-trigger" href="#charlie">Charlie</a></td>
+							<td>14</td>
+							<td>60</td>
+							<td>300</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="container" id="details"></div>
 			<footer class="page-footer grey darken-4" id="contact">
 				<div class="container">
 					<div class="row" style="margin-bottom:0;padding-bottom:25px;">
 						<div class="col l6 s12">
-							<h5 class="white-text">Contact Us</h5>
+							<h5 class="white-text thin">Contact Us</h5>
 							<p class="grey-text text-lighten-4">For enquiries about our meeting rooms, don't hesitate to drop us an email or call during office hours.</p>
 						</div>
 						<div class="col l4 offset-l2 s12 white-text">
@@ -75,5 +109,23 @@
 				ga('send', 'pageview');
 			
 			</script>
+			<div id="alpha" class="modal">
+				<div class="modal-content">
+					<h4>Alpha</h4>
+					<img class="responsive-img" src="assets/img/meeting_room_3.jpg">
+				</div>
+			</div>
+			<div id="bravo" class="modal">
+				<div class="modal-content">
+					<h4>Bravo</h4>
+					<img class="responsive-img" src="assets/img/meeting_room_2.jpg">
+				</div>
+			</div>
+			<div id="charlie" class="modal">
+				<div class="modal-content">
+					<h4>Charlie</h4>
+					<img class="responsive-img" src="assets/img/meeting_room_4.jpg">
+				</div>
+			</div>
 		</body>
 	</html>
